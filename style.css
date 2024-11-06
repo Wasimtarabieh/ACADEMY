@@ -2,12 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
 }
 
 body {
-    background-color: #f5f7fa;
+    background-color: #f4f4f9;
     color: #333;
+}
+
+.main-header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.main-header .logo {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+.main-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .container {
@@ -18,50 +37,46 @@ body {
 }
 
 .hero {
-    background: linear-gradient(135deg, #005bea, #00c6fb);
+    background: linear-gradient(135deg, #0078ff, #00c6fb);
     color: #fff;
-    padding: 120px 0;
+    padding: 100px 0;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero h1 {
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #ffe600;
+    border-radius: 15px;
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
 .hero .cta-button {
-    background: #ffe600;
+    background: #ffd700;
     color: #333;
-    padding: 12px 30px;
+    padding: 14px 35px;
     font-size: 1.2em;
     border-radius: 50px;
     cursor: pointer;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
     background: #fff;
+    color: #0078ff;
     transform: scale(1.1);
 }
 
 .course-carousel {
-    padding: 60px 0;
+    padding: 70px 0;
     text-align: center;
 }
 
 .course-carousel h2 {
     font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
+    color: #0078ff;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .carousel {
@@ -85,6 +100,7 @@ body {
 
 .carousel-slide:hover {
     transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-slide video {
@@ -96,24 +112,25 @@ body {
 }
 
 .carousel-slide video:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 footer {
     padding: 20px;
     text-align: center;
-    background: #333;
-    color: #fff;
+    background: #1a1a1a;
+    color: #ffd700;
+    font-size: 1em;
 }
 
 footer .social-links a {
     color: #00c6fb;
     margin: 0 10px;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: all 0.3s ease;
+    font-size: 1.4em;
+    transition: color 0.3s ease;
 }
 
 footer .social-links a:hover {
-    color: #ffe600;
+    color: #ffd700;
 }
