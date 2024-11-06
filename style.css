@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #005bea, #00c6fb);
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: hero-animation 5s infinite alternate;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffe600;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: #ffe600;
+    color: #333;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+.features {
+    padding: 70px 0;
+    text-align: center;
+    background: #eef2f7;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.feature {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 2.5%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 1.8em;
+    color: #005bea;
+}
+
+.testimonials {
+    padding: 60px 0;
+    background: #edf2fb;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.testimonial {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #00c6fb, #005bea);
+    color: #fff;
+    text-align: center;
+}
+
+.signup h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.signup input {
+    padding: 12px;
+    margin: 10px;
+    width: 40%;
+    max-width: 300px;
+    border-radius: 50px;
+    border: none;
+}
+
+.signup button {
+    background: #ffe600;
+    color: #333;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signup button:hover {
+    background: #fff;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+footer .social-links a {
+    color: #00c6fb;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #ffe600;
+}
+
+@keyframes hero-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
