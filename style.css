@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #005bea, #00c6fb);
+    color: #fff;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #ffe600;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: #ffe600;
+    color: #333;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+.course-carousel {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.course-carousel h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 10px;
+    scroll-snap-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover {
+    transform: scale(1.05);
+}
+
+.carousel-slide video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-slide video:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+footer .social-links a {
+    color: #00c6fb;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #ffe600;
+}
