@@ -18,7 +18,7 @@ body {
 }
 
 .main-header .logo {
-    width: 90px;
+    width: 80px;
     margin-bottom: 15px;
 }
 
@@ -39,7 +39,7 @@ body {
 .hero {
     background: linear-gradient(135deg, #0078ff, #00c6fb);
     color: #fff;
-    padding: 100px 0;
+    padding: 100px 20px;
     text-align: center;
     border-radius: 15px;
 }
@@ -87,8 +87,9 @@ body {
 
 .carousel-slide {
     flex: 0 0 auto;
-    width: 300px;
-    margin: 10px;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
     scroll-snap-align: center;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -133,4 +134,55 @@ footer .social-links a {
 
 footer .social-links a:hover {
     color: #ffd700;
+}
+
+/* الوسائط للأجهزة المحمولة */
+@media (max-width: 768px) {
+    .main-header .logo {
+        width: 60px;
+    }
+
+    .main-title {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .course-carousel h2 {
+        font-size: 1.8em;
+    }
+
+    .carousel-slide {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header .logo {
+        width: 50px;
+    }
+
+    .main-title {
+        font-size: 1.3em;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .hero .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .course-carousel h2 {
+        font-size: 1.6em;
+    }
 }
